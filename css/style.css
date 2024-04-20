@@ -76,20 +76,20 @@ body {
 }
 #booking-page {
   background: #0b0d17
-    url("./../assets/destination/background-destination-desktop.jpg") no-repeat
-    center center;
+    url("./../assets/destination/glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai.jpg")
+    no-repeat center center;
   background-size: cover;
 }
 #login-page {
   background: #0b0d17
-    url("./../assets/destination/background-destination-desktop.jpg") no-repeat
-    center center;
+    url("./../assets/destination/photorealistic-galaxy-background.jpg")
+    no-repeat center center;
   background-size: cover;
 }
 #register-page {
   background: #0b0d17
-    url("./../assets/destination/background-destination-desktop.jpg") no-repeat
-    center center;
+    url("./../assets/destination/photorealistic-galaxy-background-2.jpg")
+    no-repeat center center;
   background-size: cover;
 }
 @media (max-width: 1280px) {
@@ -1386,6 +1386,11 @@ template {
 .booking-form label {
   display: block;
   margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.booking-form label[for="cost"] {
+  color: black;
 }
 
 .booking-form input[type="text"],
@@ -1405,7 +1410,7 @@ template {
 }
 
 .booking-form button[type="submit"] {
-  background-color: #0b0d17;
+  background-color: #000;
   color: #fff;
   padding: 12px 0;
   border: none;
@@ -1416,7 +1421,7 @@ template {
 }
 
 .booking-form button[type="submit"]:hover {
-  background-color: #0b0d30;
+  background-color: #444;
 }
 
 /*----------------------------------------------LOGIN----------------------------------------------------*/
@@ -1444,6 +1449,7 @@ template {
 .login-form label {
   display: block;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .login-form input[type="email"],
@@ -1467,8 +1473,9 @@ template {
   transition: background-color 0.3s;
 }
 
-.login-form button[type="submit"]:hover {
-  background-color: #0b0d30;
+#login-text {
+  font-weight: bold;
+  font-size: 50px;
 }
 
 /*----------------------------------------------REGISTER----------------------------------------------------*/
@@ -1496,6 +1503,7 @@ template {
 .registration-form label {
   display: block;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .registration-form input[type="text"],
@@ -1522,4 +1530,9 @@ template {
 
 .registration-form button[type="submit"]:hover {
   background-color: #0b0d30;
+}
+
+#register-text {
+  font-weight: bold;
+  font-size: 50px;
 }
