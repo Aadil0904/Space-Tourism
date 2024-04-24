@@ -142,8 +142,8 @@ jQuery(document).ready(function ($) {
     }
 
     // Validate number
-    if (!/^\d+$/.test(number)) {
-      $("#numberError").text("Please enter a valid number.");
+    if (!/^\d{10}$/.test(number)) {
+      $("#numberError").text("Please enter a 10-digit number.");
       return false;
     } else {
       $("#numberError").text("");
